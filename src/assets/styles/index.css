@@ -1,0 +1,55 @@
+:root {
+
+  --blue-light-50: #eaf1ff;
+  --blue-light-100: #d9e5ff;
+  --blue-light-200: #bbceff;
+  --blue-light-300: #93adff;
+  --blue-light-400: #687eff;
+  --blue-light-500: #4551ff;
+  --blue-light-600: #2724ff;
+  --blue-light-700: #2019e9;
+  --blue-light-800: #1b18bb;
+  --blue-light-900: #1c1c93;
+  --blue-light-950: #0f0e47;
+  /*base*/
+
+  --blue-soft-50: #f2f4fc;
+  --blue-soft-100: #e1e6f8;
+  --blue-soft-200: #c9d2f4;
+  --blue-soft-300: #a5b6eb;
+  --blue-soft-400: #7a91e0;
+  --blue-soft-500: #5a6cd7;
+  --blue-soft-600: #4651ca;
+  --blue-soft-700: #3c40b9;
+  --blue-soft-800: #363797;
+  --blue-soft-900: #303278;
+  --blue-soft-950: #272757;
+  /*base*/
+
+  --grey-dark-50: #f4f5f9;
+  --grey-dark-100: #ecedf3;
+  --grey-dark-200: #dcdfe9;
+  --grey-dark-300: #c6cadb;
+  --grey-dark-400: #aeb3cb;
+  --grey-dark-500: #989bbc;
+  --grey-dark-600: #8686ac;
+  /*base*/
+  --grey-dark-700: #706f93;
+  --grey-dark-800: #5b5b78;
+  --grey-dark-900: #4d4d62;
+  --grey-dark-950: #2d2d39;
+
+  --grey-light-50: #f4f6fa;
+  --grey-light-100: #e7e9f2;
+  --grey-light-200: #d4d8e9;
+  --grey-light-300: #b6bfda;
+  --grey-light-400: #939ec7;
+  --grey-light-500: #7a83b7;
+  --grey-light-600: #676da9;
+  --grey-light-700: #5c5e99;
+  --grey-light-800: #505081;
+  /*base*/
+  --grey-light-900: #424366;
+  --grey-light-950: #2b2b40;
+}
+

@@ -1,6 +1,6 @@
 
-function CardProject({ project, description, link, img1, img2, img3, children }) {
-  let idCarousel = `crsl${img1.split('/')[5]}`
+function CardProject({ id, project, description, link, img1, img2, img3, children }) {
+  let idCarousel = `crsl${id}`
   console.log(idCarousel);
   
   return (

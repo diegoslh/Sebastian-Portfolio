@@ -21,6 +21,7 @@ function Projects({ lang }) {
       <section className='row'>
         <div className="col-lg-6 mb-3">
           <CardProject
+            id='project1'
             project={langs[lang]?.projects_name1}
             description={langs[lang]?.projects_description1}
             link='http://'
@@ -36,6 +37,7 @@ function Projects({ lang }) {
         </div>
         <div className="col-lg-6 mb-3">
           <CardProject
+            id='project2'
             project={langs[lang]?.projects_name2}
             description={langs[lang]?.projects_description2}
             link='http://'
@@ -54,6 +56,7 @@ function Projects({ lang }) {
       <section className='row mt-2'>
         <div className="col-lg-6 mb-3">
           <CardProject
+            id='project3'
             project={langs[lang]?.projects_name3}
             description={langs[lang]?.projects_description3}
             link='http://'

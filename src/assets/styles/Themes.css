@@ -14,6 +14,14 @@
   }
 }
 
+.light_theme .nav_btn_theme {
+  border-color: #4DA1A9;
+}
+
+.light_theme .nav_btn_theme:hover {
+  background-color: #4da1a93d;
+}
+
 .light_theme .hd_content {
   color: #04364A;
 
@@ -26,6 +34,10 @@
 .light_theme .hd_btns {
   outline: 2px solid #4DA1A9;
   color: #1E686F;
+}
+
+.light_theme .hd_btns:hover {
+  box-shadow: 0px 3px 0px 0px #4DA1A9;
 }
 
 .light_theme .subtitles {
@@ -84,17 +96,7 @@
 
 .light_theme .proj_target {
   color: #4DA1A9;
-
 }
-
-
-
-
-
-
-
-
-
 
 /* .cont_main::after {
   content: '';
@@ -148,43 +150,102 @@
   📌 Dark Theme
 */
 .dark_theme {
-  /* background: linear-gradient(180deg, aqua 1%, black 20%);
-  background: linear-gradient(180deg, aqua 16%, black 5%); */
-  background: linear-gradient(180deg, aqua -10%, transparent 5%);
-  background: linear-gradient(180deg, aqua -10%, #222 5%);
+  background: radial-gradient(ellipse 80% 80% at 50% -20%,
+      #00CCDD63,
+      hsla(0, 0%, 100%, 0));
+  background-color: #222;
   color: white;
 }
 
-/* body {
-  background: #222;
-} */
-/* Estilos de Youtube */
-html:not(.style-scope) {
-  --primary-text-color: var(--light-theme-text-color);
-  --primary-background-color: var(--light-theme-background-color);
-  --secondary-text-color: var(--light-theme-secondary-color);
-  --disabled-text-color: var(--light-theme-disabled-color);
-  --divider-color: var(--light-theme-divider-color);
+.dark_theme .navbar_links {
+  background-color: #16503c0f;
 
-  --error-color: #dd2c00;
-  --primary-color: #3f51b5;
-  --light-primary-color: #c5cae9;
-  --dark-primary-color: #303f9f;
-  --accent-color: #ff4081;
-  --light-accent-color: #ff80ab;
-  --dark-accent-color: #f50057;
-  --light-theme-background-color: #fff;
-  --light-theme-base-color: #000;
-  --light-theme-text-color: #212121;
-  --light-theme-secondary-color: #737373;
-  --light-theme-disabled-color: #9b9b9b;
-  --light-theme-divider-color: #dbdbdb;
-  --dark-theme-background-color: #212121;
-  --dark-theme-base-color: #fff;
-  --dark-theme-text-color: #fff;
-  --dark-theme-secondary-color: #bcbcbc;
-  --dark-theme-disabled-color: #646464;
-  --dark-theme-divider-color: #3c3c3c;
-  --text-primary-color: var(--dark-theme-text-color);
-  --default-primary-color: var(--primary-color);
+  & a {
+    color: #00CCDD;
+  }
+}
+
+.dark_theme .nav_btn_theme {
+  border-color: #00CCDD;
+}
+
+.dark_theme .nav_btn_theme:hover {
+  background-color: #7fffd41c;
+}
+
+.dark_theme .hd_content {
+  color: aliceblue;
+
+  & h1:first-child,
+  span {
+    color: #7CF5FF;
+  }
+}
+
+.dark_theme .hd_btns {
+  outline: 2px solid #478CCF;
+  color: #FFF;
+}
+
+.dark_theme .hd_btns:hover {
+  box-shadow: 0px 3px 0px 0px #478CCF;
+}
+
+.dark_theme .subtitles {
+  color: #36C2CE;
+}
+
+.dark_theme .card_experience {
+  background: #176B872E;
+}
+
+.dark_theme .card_tools {
+  /* background: #176B872E; */
+  outline: 2px solid #00CCDD;
+}
+
+.dark_theme .card_tools {
+  position: relative;
+
+  & h3 {
+    background: linear-gradient(0deg, #36C2CE 5%, #FFF 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.dark_theme .card_project {
+  background: #176B872E;
+  /* box-shadow: 0 0 12px #176B873B; */
+  /* outline: 2px solid #00CCDD; */
+
+  & h4 {
+    color: #36C2CE;
+  }
+}
+
+.dark_theme .proj_target {
+  color: rgba(245, 245, 245, .9);
+  outline-color: #478CCF;
+}
+
+.dark_theme .button_cv {
+  color: #00CCDD;
+  border: 1px solid #00CCDD;
+
+  & .button__icon {
+    background-color: #00CCDD;
+  }
+
+  & .button__text {
+    color: #FFF;
+  }
+
+  &:hover {
+    border: 1px solid #478CCF;
+  }
+}
+
+.dark_theme #contact code {
+  color: #00cbdda9 !important;
 }

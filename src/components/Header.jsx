@@ -1,6 +1,7 @@
 import langs from '../assets/languages/languages.json'
 import linkedinIcon from '../assets/icons/linkedin.svg'
-import githubIcon from '../assets/icons/github.svg'
+import githubDarkIcon from '../assets/icons/github.svg'
+import githubwhiteIcon from '../assets/icons/github-white.svg'
 import sunIcon from '../assets/icons/sun-svgrepo.svg'
 import moonIcon from '../assets/icons/moon-svgrepo.svg'
 
@@ -9,8 +10,9 @@ import { useEffect, useState } from 'react'
 function Header({ lang }) {
 
   const [theme, seTheme] = useState(sessionStorage.getItem('theme') || 'light')
-  let themeIcon = (theme === 'light') ? sunIcon : moonIcon
+  let themeIcon = (theme === 'dark') ? sunIcon : moonIcon
   let root = document.getElementById('root');
+
   useEffect(() => {
     if (theme === 'dark') {
       root.classList.add('dark_theme')
@@ -22,6 +24,8 @@ function Header({ lang }) {
     sessionStorage.setItem('theme', theme)
   }, [theme, root])
 
+  let githubIcon = (theme === 'dark') ? githubwhiteIcon : githubDarkIcon
+
   return (
     <header className="row hd_content">
       <nav className='navbar_links'>
@@ -30,9 +34,13 @@ function Header({ lang }) {
         <a href="#projects">{langs[lang]?.projects_title}</a>
         <a href="#about">{langs[lang]?.about_title}</a>
 
-        {/* <button type='button' onClick={() => seTheme(theme === 'light' ? 'dark' : 'light')} className='btn btn-outline-secondary btn-sm'>
+        <button
+          type='button'
+          className='btn btn-sm nav_btn_theme'
+          onClick={() => seTheme(theme === 'light' ? 'dark' : 'light')}
+        >
           <img src={themeIcon} alt="Theme Icon" height="20px" />
-        </button> */}
+        </button>
       </nav>
 
       <br />

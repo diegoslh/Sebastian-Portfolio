@@ -27,10 +27,17 @@
   }
 }
 
-@media (max-width: 768px) {
-  .navbar_links {
-    width: 90%;
-  }
+.nav_btn_theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  border-radius: 50%;
+  height: 36px;
+  width: 37px;
+  border: 1px solid;
 }
 
 .hd_content {
@@ -73,4 +80,16 @@
   justify-content: center;
   gap: 5%;
   transition: background-color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar_links {
+    width: 90%;
+  }
+  .nav_btn_theme {
+    right: 1%;
+    border: none;
+    height: 29px;
+    width: 30px;
+  }
 }
